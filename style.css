@@ -1,0 +1,36 @@
+/* Testimonials Carousel */
+#testimonials-container {
+    display: flex;
+    will-change: transform;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #testimonials-container>div {
+        min-width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 640px) {
+    #testimonials-container>div {
+        min-width: 100%;
+    }
+}
+
+/* Prevent shrinking and allow clean scroll snapping */
+#shop-system-cards>div,
+#shop-case-cards>div,
+#testimonials-container>div {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+#testimonials-container,
+#shop-system-cards,
+#shop-case-cards {
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    display: flex;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+}
