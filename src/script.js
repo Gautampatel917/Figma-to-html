@@ -9,8 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Width of one card plus the gap
-        const card = container.querySelector("div");
+        // Try to select a card more reliably by class or by common structure
+        const card = container.querySelector(".w-72, .flex-shrink-0") || container.querySelector("div");
+        if (!card) {
+            console.warn(`No card found in ${containerId}`);
+            return;
+        }
+
         const style = window.getComputedStyle(container);
         const gap = parseInt(style.gap || "24");
         const cardWidth = card.offsetWidth;
@@ -26,8 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Setup for each section
+    // Setup carousels
     setupCarousel("shop-system-cards", "prev-shop-system", "next-shop-system");
     setupCarousel("shop-case-cards", "prev-shop-case", "next-shop-case");
     setupCarousel("testimonials-container", "prev-testimonial", "next-testimonial");
+
+    // Mobile nav toggle
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (toggleBtn && mobileMenu) {
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 });

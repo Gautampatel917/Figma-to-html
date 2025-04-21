@@ -4,80 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="output.css">
     <title>DentalImplants.com</title>
 </head>
 
 <body class="">
     <!-- Navbar goes here -->
-    <nav class="w-full h-14 bg-indigo-50 flex justify-evenly items-center">
-        <div class="text-xl font-bold text-blue-950 whitespace-nowrap mr-6">
+    <nav class="w-full h-14 bg-indigo-50 flex justify-between items-center px-4 md:px-8 sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-blue-950 whitespace-nowrap">
             Dentallmplants.com
         </div>
-        <div class="md:flex hidden font-semibold max-w-2xl justify-evenly md:w-[40vw]">
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center font-semibold gap-6">
             <a href="#home" class="hover:text-blue-600">Home</a>
-
-            <!-- Dropdown -->
-            <!-- Production Dropdown -->
             <div class="relative group">
-                <button class="hover:text-blue-600 focus:outline-none">
-                    Production
-                </button>
-
-                <!-- Dropdown content -->
+                <button class="hover:text-blue-">Production</button>
                 <div
                     class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-lg z-50 min-w-[150px]">
                     <a href="#painting" class="px-4 py-2 hover:bg-gray-100">Painting</a>
                     <a href="#plumbing" class="px-4 py-2 hover:bg-gray-100">Plumbing</a>
                 </div>
             </div>
-
             <a href="#why" class="hover:text-blue-600">Why Choose Us</a>
             <a href="#brands" class="hover:text-blue-600">Brands</a>
             <a href="#support" class="hover:text-blue-600">Support</a>
             <a href="#contact" class="hover:text-blue-600">Contact Us</a>
         </div>
-        <div class="md:flex hidden md:w-[30vw] justify-around">
-            <!-- Search -->
+
+        <!-- Icons Desktop -->
+        <div class="hidden md:flex items-center gap-4">
             <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
                 <img src="../images/vector/search.png" alt="Search" class="w-5 h-5" />
             </div>
-
-            <!-- Cart -->
-            <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+            <div class="relative bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
                 <img src="../images/vector/card.png" alt="Cart" class="w-5 h-5" />
                 <div
                     class="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-[10px] text-white font-bold">
-                    5
-                </div>
+                    5</div>
             </div>
-
-            <!-- Help -->
             <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
                 <img src="../images/vector/help.png" alt="Help" class="w-5 h-5" />
             </div>
-
-            <!-- User -->
             <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
                 <img src="../images/vector/profile.png" alt="User" class="w-5 h-5" />
             </div>
-
-            <!-- Wishlist -->
             <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
                 <img src="../images/vector/heart.png" alt="Wishlist" class="w-5 h-5" />
             </div>
-
-            <!-- CTA Button -->
             <button
                 class="bg-[#5E5EEE] text-white font-bold text-sm px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-blue-800 transition">
                 <img src="../images/vector/tooth.png" alt="Tooth" class="w-5 h-5" />
                 Browse Implants
             </button>
         </div>
+
+        <!-- Mobile Menu Toggle -->
         <div class="md:hidden">
-            <a href="#" class="text-3xl">&#8801;</a>
+            <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="text-3xl">
+                &#8801;
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg w-3/4 fixed top-14 right-0 h-[calc(100vh-3.5rem)] p-5 z-50 overflow-y-auto">
+        <nav class="flex flex-col gap-4">
+            <a href="#home" class="text-gray-800 font-semibold">Home</a>
+            <div class="relative">
+                <button onclick="document.getElementById('prodDropdown').classList.toggle('hidden')"
+                    class="text-gray-800 font-semibold text-left w-full">Production</button>
+                <div id="prodDropdown" class="hidden flex flex-col mt-1 ml-2 bg-gray-50 rounded-md overflow-hidden">
+                    <a href="#painting" class="px-4 py-2 hover:bg-gray-200">Painting</a>
+                    <a href="#plumbing" class="px-4 py-2 hover:bg-gray-200">Plumbing</a>
+                </div>
+            </div>
+            <a href="#why" class="text-gray-800 font-semibold">Why Choose Us</a>
+            <a href="#brands" class="text-gray-800 font-semibold">Brands</a>
+            <a href="#support" class="text-gray-800 font-semibold">Support</a>
+            <a href="#contact" class="text-gray-800 font-semibold">Contact Us</a>
+
+            <!-- Icons with Labels -->
+            <div class="flex flex-col gap-4 mt-6">
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/search.png" alt="Search" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Search</span>
+                </div>
+                <div class="flex items-center gap-3 relative">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/card.png" alt="Cart" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Cart</span>
+                    <div
+                        class="absolute left-6 -top-1.5 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-[10px] text-white font-bold">
+                        5</div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/help.png" alt="Help" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Help</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/profile.png" alt="User" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">User</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/heart.png" alt="Wishlist" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Wishlist</span>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button
+                class="mt-6 w-full bg-[#5E5EEE] text-white font-bold text-sm px-4 py-3 rounded-2xl flex items-center justify-center gap-2 hover:bg-blue-800 transition">
+                <img src="../images/vector/tooth.png" alt="Tooth" class="w-5 h-5" />
+                Browse Implants
+            </button>
+        </nav>
+    </div>
     <!-- navbar ends here -->
     <header class="introduction">
         <div
@@ -665,7 +719,6 @@
         </div>
     </section>
     <!-- Simple, Secure, Swift Section ends here -->
-    <script src="script.js"></script>
 
     <!-- Trusted by Dental Section -->
     <section class="relative w-full bg-white/90 py-20 px-4 overflow-hidden">
@@ -1070,6 +1123,8 @@
         </div>
     </footer>
     <!-- footer ends here -->
+
+    <script src="script.js"></script>
 </body>
 
 </html>
