@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <title>DentalImplants.com</title>
+</head>
+
+<body class="">
+    <!-- Navbar goes here -->
+    <nav class="w-full h-14 bg-indigo-50 flex justify-between items-center px-4 md:px-8 sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="text-xl font-bold text-blue-950 whitespace-nowrap">
+            Dentallmplants.com
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center font-semibold gap-6">
+            <a href="#home" class="hover:text-blue-600">Home</a>
+            <div class="relative group">
+                <button class="hover:text-blue-">Production</button>
+                <div
+                    class="absolute left-0 mt-2 hidden group-hover:flex flex-col bg-white text-black shadow-lg rounded-lg z-50 min-w-[150px]">
+                    <a href="#painting" class="px-4 py-2 hover:bg-gray-100">Painting</a>
+                    <a href="#plumbing" class="px-4 py-2 hover:bg-gray-100">Plumbing</a>
+                </div>
+            </div>
+            <a href="#why" class="hover:text-blue-600">Why Choose Us</a>
+            <a href="#brands" class="hover:text-blue-600">Brands</a>
+            <a href="#support" class="hover:text-blue-600">Support</a>
+            <a href="#contact" class="hover:text-blue-600">Contact Us</a>
+        </div>
+
+        <!-- Icons Desktop -->
+        <div class="hidden md:flex items-center gap-4">
+            <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                <img src="../images/vector/search.png" alt="Search" class="w-5 h-5" />
+            </div>
+            <div class="relative bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                <img src="../images/vector/card.png" alt="Cart" class="w-5 h-5" />
+                <div
+                    class="absolute -top-1.5 -right-1.5 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-[10px] text-white font-bold">
+                    5</div>
+            </div>
+            <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                <img src="../images/vector/help.png" alt="Help" class="w-5 h-5" />
+            </div>
+            <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                <img src="../images/vector/profile.png" alt="User" class="w-5 h-5" />
+            </div>
+            <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                <img src="../images/vector/heart.png" alt="Wishlist" class="w-5 h-5" />
+            </div>
+            <button
+                class="bg-[#5E5EEE] text-white font-bold text-sm px-4 py-2 rounded-2xl flex items-center gap-2 hover:bg-blue-800 transition">
+                <img src="../images/vector/tooth.png" alt="Tooth" class="w-5 h-5" />
+                Browse Implants
+            </button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="md:hidden">
+            <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="text-3xl">
+                &#8801;
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg w-3/4 fixed top-14 right-0 h-[calc(100vh-3.5rem)] p-5 z-50 overflow-y-auto">
+        <nav class="flex flex-col gap-4">
+            <a href="#home" class="text-gray-800 font-semibold">Home</a>
+            <div class="relative">
+                <button onclick="document.getElementById('prodDropdown').classList.toggle('hidden')"
+                    class="text-gray-800 font-semibold text-left w-full">Production</button>
+                <div id="prodDropdown" class="hidden flex flex-col mt-1 ml-2 bg-gray-50 rounded-md overflow-hidden">
+                    <a href="#painting" class="px-4 py-2 hover:bg-gray-200">Painting</a>
+                    <a href="#plumbing" class="px-4 py-2 hover:bg-gray-200">Plumbing</a>
+                </div>
+            </div>
+            <a href="#why" class="text-gray-800 font-semibold">Why Choose Us</a>
+            <a href="#brands" class="text-gray-800 font-semibold">Brands</a>
+            <a href="#support" class="text-gray-800 font-semibold">Support</a>
+            <a href="#contact" class="text-gray-800 font-semibold">Contact Us</a>
+
+            <!-- Icons with Labels -->
+            <div class="flex flex-col gap-4 mt-6">
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/search.png" alt="Search" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Search</span>
+                </div>
+                <div class="flex items-center gap-3 relative">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/card.png" alt="Cart" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Cart</span>
+                    <div
+                        class="absolute left-6 -top-1.5 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-[10px] text-white font-bold">
+                        5</div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/help.png" alt="Help" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Help</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/profile.png" alt="User" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">User</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="bg-[#5E5EEE] w-9 h-9 rounded-full flex items-center justify-center">
+                        <img src="../images/vector/heart.png" alt="Wishlist" class="w-5 h-5" />
+                    </div>
+                    <span class="text-sm font-semibold text-gray-800">Wishlist</span>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button
+                class="mt-6 w-full bg-[#5E5EEE] text-white font-bold text-sm px-4 py-3 rounded-2xl flex items-center justify-center gap-2 hover:bg-blue-800 transition">
+                <img src="../images/vector/tooth.png" alt="Tooth" class="w-5 h-5" />
+                Browse Implants
+            </button>
+        </nav>
+    </div>
+    <!-- navbar ends here -->
+    <header class="introduction">
+        <div
+            class="panel1 pt-10 bg-gradient-to-r from-[#2C2C66] to-[#0B0B38] min-h-screen w-full px-4 flex flex-col md:flex-row items-center justify-evenly gap-10 md:gap-6 max-w-7xl mx-auto">
+            <!-- Text Section -->
+            <div class="infoText w-full md:w-1/2 text-white space-y-6">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    Superior Dental
+                    <span class="inline-block">
+                        <img src="../images/introText1.png" alt="Precision"
+                            class="h-6 md:h-10 inline-block align-middle ml-2" />
+                    </span>
+                    Implants Unmatched Precision &
+                    <span class="inline-block">
+                        <img src="../images/introText2.png" alt="Longevity"
+                            class="h-6 md:h-10 inline-block align-middle ml-2" />
+                    </span>
+                    Longevity
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl">
+                    Elevate your practice with premium implants engineered for strength,
+                    aesthetics, and seamless integration.
+                </p>
+                <div class="flex flex-nowrap sm:flex-nowrap sm:space-x-8 space-x-4 space-y-4 sm:space-y-0 py-4">
+                    <div class="text-center w-1/3 sm:w-auto">
+                        <p class="text-2xl sm:text-3xl font-bold">99%</p>
+                        <p class="text-sm">Success Rate</p>
+                    </div>
+                    <div class="text-center w-1/3 sm:w-auto">
+                        <p class="text-2xl sm:text-3xl font-bold">98%</p>
+                        <p class="text-sm">Patient Satisfaction</p>
+                    </div>
+                    <div class="text-center w-1/3 sm:w-auto">
+                        <p class="text-2xl sm:text-3xl font-bold">95%</p>
+                        <p class="text-sm">Durability</p>
+                    </div>
+                </div>
+
+                <div class="shopImg flex justify-center md:justify-start">
+                    <img src="../images/introShop.png" alt="shop" class="h-8 sm:h-10" />
+                </div>
+            </div>
+            <!-- Text Section ends here -->
+
+            <!-- Introduction Image -->
+            <div class="introImg w-full md:w-1/2 flex justify-center items-center md:justify-end relative">
+                <!-- Rating Badge -->
+                <div
+                    class="absolute top-10 left-5 sm:top-16 sm:left-6 bg-white w-[80vw] sm:w-[240px] px-4 py-6 flex flex-col items-start justify-center rounded-xl shadow-md z-10 space-y-2">
+                    <img src="../images/heroRating.png" alt="rating" class="w-10 sm:w-12 h-auto object-contain" />
+                    <span class="font-semibold text-sm sm:text-lg text-gray-900">
+                        Best Service & 5 Star
+                    </span>
+                    <p class="text-xs sm:text-sm text-gray-700 leading-snug">
+                        Advanced technology for seamless integration.
+                    </p>
+                </div>
+
+                <!-- Product Image with Hover -->
+                <div class="w-[260px] h-[340px] sm:w-[300px] sm:h-[340px] md:w-[340px] md:h-[380px] 
+                            rounded-[30px] overflow-hidden transform transition-transform duration-700 ease-in-out 
+                            hover:scale-105 hover:-rotate-2 mr-4 sm:mr-8 md:mr-[5vw]">
+                    <img src="../images/heroImg.png" alt="product1" class="w-full h-full object-cover rounded-[30px]" />
+                </div>
+            </div>
+            <!-- Introduction Text Section ends here -->
+
+            <!-- Contact Information -->
+            <div
+                class="contactInfo absolute left-1/2 transform -translate-x-1/2 bottom-[-750px] translate-y-1/2 w-[90vw] md:w-[80vw] md:h-[80px] md:bottom-[-55px] lg:w-[70vw] bg-white py-6 px-4 flex flex-col md:flex-row justify-between items-center shadow-xl rounded-xl z-10 gap-6">
+
+                <!-- Contact Help -->
+                <div class="contact flex items-center w-full md:w-auto px-4">
+                    <img src="../images/icons/contact.png" alt="contact" class="h-8 mr-2" />
+                    <div>
+                        <span class="font-semibold block text-center md:text-left">Need Help With Your Order?</span>
+                        <p class="text-sm text-center md:text-left">(+01) 789 987 645</p>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <span class="hidden md:block h-12 w-px bg-gray-300"></span>
+
+                <!-- Shipping Info -->
+                <div class="contact flex items-center w-full md:w-auto px-4">
+                    <img src="../images/icons/watch24.png" alt="shipping" class="h-8 mr-2" />
+                    <div>
+                        <span class="font-semibold block text-center md:text-left">Shipping Time</span>
+                        <p class="text-sm text-center md:text-left">
+                            Standard: 3-5 Business Days<br />
+                            Express: 1-2 Business Days
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <span class="hidden md:block h-12 w-px bg-gray-300"></span>
+
+                <!-- Track Order -->
+                <div
+                    class="trackOrder flex items-center justify-center w-full md:w-auto bg-blue-600 hover:bg-blue-800 text-white px-4 py-3 rounded-xl transition-colors duration-300">
+                    <img src="../images/icons/location.png" alt="track order" class="h-8 mr-2" />
+                    <span class="font-semibold">Track Your Order</span>
+                </div>
+            </div>
+            <!-- Contact Information ends here -->
+        </div>
+    </header>
+    <!-- Header Section ends here -->
+
+    <!-- Shop section -->
+    <section class="shop max-w-7xl mx-auto px-4 mt-[350px] md:mt-20">
+        <div class="shopBySystem">
+            <div
+                class="shopSystemTitle flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+                <div class="flex flex-col gap-4 w-full md:w-1/2">
+                    <div class="title flex items-center gap-2">
+                        <img src="../images/icons/titleIcon.png" alt="title" class="h-5" />
+                        <p class="text-xs font-bold text-blue-700">Shop By System</p>
+                    </div>
+                    <h2 class="text-2xl md:text-2xl font-bold">
+                        Find the Perfect Implant Solution Tailored for Every Case!
+                    </h2>
+                </div>
+                <div
+                    class="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors w-full md:w-auto justify-center">
+                    <img src="../images/icons/shopIcon.png" alt="shop" class="h-5" />
+                    <a href="#" class="font-semibold">See More</a>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="relative flex justify-center items-center max-w-full overflow-hidden">
+                <button id="prev-shop-system" aria-label="Previous"
+                    class="w-10 h-10 bg-[#E9E9FF] rounded-full flex items-center justify-center hover:bg-[#5E5EEE] transition-colors absolute left-8 md:ml-[9vw] top-1/2 -translate-y-1/2 shadow-lg z-10">
+                    <img src="../images/icons/next.png" alt="Previous" class="w-6 h-6 rotate-180" />
+                </button>
+                <div id="shop-system-cards"
+                    class="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory">
+                    <div class="w-72 border rounded-tl-lg shadow relative flex-shrink-0 snap-start">
+                        <span
+                            class="absolute top-0 left-0 bg-blue-800 text-white text-xs font-semibold px-2 py-1 rounded-br-lg">New</span>
+                        <img src="../images/cover/starts.png" alt="rating" class="h-7 float-right">
+                        <img src="../images/cover/image1.png" alt="Product Icon"
+                            class="w-full h-40 object-contain mb-2 mt-5" />
+                        <h3 class="font-semibold text-lg">NeoDent GM</h3>
+                        <p class="text-sm text-gray-600">Premium Implant System</p>
+                        <div class="productInfo flex flex-row justify-evenly items-center mt-4 space-y-2">
+                            <div
+                                class="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors justify-center">
+                                <img src="../images/icons/viewDetails.png" alt="shop" class="h-5" />
+                                <a href="#" class="font-semibold">View Details</a>
+                            </div>
+                            <div class="favorite">
+                                <img src="../images/icons/heart.png" alt="favorite" class="h-10 mb-2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-72 border rounded-tl-lg shadow relative flex-shrink-0">
+                        <span
+                            class="absolute top-0 left-0 bg-blue-800 text-white text-xs font-semibold px-2 py-1 rounded-br-lg">Top
+                            Seller</span>
+                        <img src="../images/cover/starts.png" alt="rating" class="h-7 float-right">
+                        <img src="../images/cover/image2.png" alt="Product Icon"
+                            class="w-full h-40 object-contain mb-2 mt-5" />
+                        <h3 class="font-semibold text-lg">MegaGen AnyOne</h3>
+                        <p class="text-sm text-gray-600">Versatile Solution</p>
+                        <div class="productInfo flex flex-row justify-evenly items-center mt-4 space-y-2">
+                            <div
+                                class="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors justify-center">
+                                <img src="../images/icons/viewDetails.png" alt="shop" class="h-5" />
+                                <a href="#" class="font-semibold">View Details</a>
+                            </div>
+                            <div class="favorite">
+                                <img src="../images/icons/heart.png" alt="favorite" class="h-10 mb-2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-72 border rounded-tl-lg shadow relative flex-shrink-0">
+                        <!-- <span
+                            class="absolute top-0 left-0 bg-blue-800 text-white text-xs font-semibold px-2 py-1 rounded-br-lg">New</span> -->
+                        <img src="../images/cover/starts.png" alt="rating" class="h-7 float-right">
+                        <img src="../images/cover/image3.png" alt="Product Icon"
+                            class="w-full h-40 object-contain mb-2 mt-5" />
+                        <h3 class="font-semibold text-lg">MegaGen AnyRidge</h3>
+                        <p class="text-sm text-gray-600">Advanced System</p>
+                        <div class="productInfo flex flex-row justify-evenly items-center mt-4 space-y-2">
+                            <div
+                                class="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors justify-center">
+                                <img src="../images/icons/viewDetails.png" alt="shop" class="h-5" />
+                                <a href="#" class="font-semibold">View Details</a>
+                            </div>
+                            <div class="favorite">
+                                <img src="../images/icons/heart.png" alt="favorite" class="h-10 mb-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="next-shop-system" aria-label="Next"
+                    class="w-10 h-10 bg-[#5E5EEE] rounded-full flex items-center justify-center hover:bg-[#4242FF] transition-colors absolute right-8 md:mr-[9vw] top-1/2 -translate-y-1/2 shadow-lg z-10">
+                    <img src="../images/icons/arrow.png" alt="Next" class="w-6 h-6" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Shope by case -->
+        <div class="shopByCase mt-20">
+            <div
+                class="shopSystemTitle flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+                <div class="flex flex-col gap-4 w-full md:w-1/2">
+                    <div class="title flex items-center gap-2">
+                        <img src="../images/icons/titleIcon.png" alt="title" class="h-5" />
+                        <p class="text-xs font-bold text-blue-700">Shop By Case</p>
+                    </div>
+                    <h2 class="text-2xl md:text-2xl font-bold">
+                        Case-Specific Solutions for Perfect Restorations
+                    </h2>
+                </div>
+                <div
+                    class="seeMore flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition-colors w-full md:w-auto justify-center">
+                    <img src="../images/icons/shopIcon.png" alt="shop" class="h-5" />
+                    <a href="#" class="font-semibold">See More</a>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="relative flex justify-center items-center max-w-full overflow-hidden">
+                <button id="prev-shop-case" aria-label="Previous"
+                    class="w-10 h-10 bg-[#E9E9FF] rounded-full flex items-center justify-center hover:bg-[#5E5EEE] transition-colors absolute left-0 top-1/2 -translate-y-1/2 shadow-lg z-10">
+                    <img src="../images/icons/next.png" alt="Previous" class="w-6 h-6 rotate-180" />
+                </button>
+                <div id="shop-case-cards"
+                    class="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide snap-x snap-mandatory max-w-full px-4 py-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="flex flex-col items-center w-[269px] h-[233px] relative group flex-shrink-0 snap-start hover:mt-5">
+                        <div
+                            class="w-[269px] h-[241px] bg-white border-4 border-[#5E5EEE] rounded-[40px] shadow-md overflow-hidden relative">
+                            <img src="../images/cover/image4.png" alt="Product 1"
+                                class="w-full h-full object-contain" />
+                            <div
+                                class="absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-bold">Single tooth replacement solution</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[210px] h-[60px] bg-[#5E5EEE] rounded-[10px] mt-[-37px] z-10 flex justify-evenly items-center px-4">
+                            <img src="../images/icons/tooth.png" alt="Favorite" class="h-10" />
+                            <span class="text-white font-semibold text-lg">Single</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flex flex-col items-center w-[269px] h-[233px] relative group flex-shrink-0">
+                        <div
+                            class="w-[269px] h-[241px] bg-white border-4 border-[#5E5EEE] rounded-[40px] shadow-md overflow-hidden relative">
+                            <img src="../images/cover/image5.png" alt="Product 2" class="w-full h-full object-cover" />
+                            <div
+                                class="absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-bold">Full arch restoration with 4 implants</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[210px] h-[60px] bg-[#5E5EEE] rounded-[10px] mt-[-37px] z-10 flex justify-evenly items-center px-4">
+                            <img src="../images/icons/tooth.png" alt="Favorite" class="h-10" />
+                            <span class="text-white font-semibold text-lg">All-on-4</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="flex flex-col items-center w-[269px] h-[233px] relative group flex-shrink-0">
+                        <div
+                            class="w-[269px] h-[241px] bg-white border-4 border-[#5E5EEE] rounded-[40px] shadow-md overflow-hidden relative">
+                            <img src="../images/cover/image6.png" alt="Product 3"
+                                class="w-full h-full object-contain" />
+                            <div
+                                class="absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-bold">Full arch restoration with 6 implants</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[210px]  h-[60px] bg-[#5E5EEE] rounded-[10px] mt-[-37px] z-10 flex justify-evenly items-center px-4">
+                            <img src="../images/icons/tooth.png" alt="Favorite" class="h-10" />
+                            <span class="text-white font-semibold text-lg">All-on-6</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="flex flex-col items-center w-[269px] h-[233px] relative group flex-shrink-0">
+                        <div
+                            class="w-[269px] h-[241px] bg-white border-4 border-[#5E5EEE] rounded-[40px] shadow-md overflow-hidden relative">
+                            <img src="../images/cover/image7.png" alt="Product 4"
+                                class="w-full h-full object-contain" />
+                            <div
+                                class="absolute inset-0 bg-blue-500 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white text-xl font-bold">Digital Planing & guided surgery</span>
+                            </div>
+                        </div>
+                        <div
+                            class="w-auto h-[60px] bg-[#5E5EEE] rounded-[10px] mt-[-37px] z-10 flex justify-evenly items-center px-4">
+                            <img src="../images/icons/tooth.png" alt="Favorite" class="h-10" />
+                            <span class="text-white font-semibold text-lg">Digital Workflow</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="next-shop-case" aria-label="Next"
+                    class="w-10 h-10 bg-[#5E5EEE] rounded-full flex items-center justify-center hover:bg-[#4242FF] transition-colors absolute right-0 top-1/2 -translate-y-1/2 shadow-lg z-10">
+                    <img src="../images/icons/arrow.png" alt="Next" class="w-6 h-6" />
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Section ends here -->
+
+    <!-- Journey -->
+    <section
+        class="relative w-full bg-[#F8F8FF] py-16 flex justify-center items-center flex-col gap-10 overflow-hidden">
+        <!-- Decorative Vector Left -->
+        <div
+            class="absolute left-[-1.25%] right-[92.02%] top-[66.31%] bottom-[3.08%] bg-[#5E5EEE] transform rotate-[18.4deg] z-0">
+        </div>
+
+        <!-- Decorative Vector Right -->
+        <div
+            class="absolute left-[90%] -right-[40.53%] top-[36.61%] bottom-[30.76%] border border-[#5E5EEE] transform rotate-[-161.6deg] z-0 opacity-20 w-[100px] h-[100px] bg-blue-500">
+        </div>
+
+        <!-- Content Container -->
+        <div class="z-10 flex flex-col items-center text-center gap-10 max-w-[1057px]">
+            <!-- Heading -->
+            <div class="flex flex-col items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <img src="../images/icons/titleIcon.png" alt="icon" class="h-5" />
+                    <h3 class="text-[#5E5EEE] font-bold text-lg">How It Works</h3>
+                </div>
+                <h2 class="text-3xl font-bold text-black">Simple Steps to a Perfect Smile!</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-10">
+                <!-- search -->
+                <div class="flex flex-col items-center gap-2 w-[188px]">
+                    <div class="bg-[#5E5EEE] p-3 rounded-full">
+                        <img src="../images/icons/search.png" alt="search" class="h-8" />
+                    </div>
+                    <p class="text-[22px] font-semibold text-black">Search</p>
+                    <p class="text-[22px] font-medium text-[#5E5EEE]">Find Your Products</p>
+                </div>
+
+                <img src="../images/icons/arrow.gif" alt="arrow gif" class="h-16 mt-10 hidden md:block" />
+
+                <!-- card -->
+                <div class="flex flex-col items-center gap-2 w-[188px]">
+                    <div class="bg-[#5E5EEE] p-3 rounded-full">
+                        <img src="../images/icons/card.png" alt="cart" class="h-8" />
+                    </div>
+                    <p class="text-[22px] font-semibold text-black">Add to Card</p>
+                    <p class="text-[22px] font-medium text-[#5E5EEE]">Select Quality</p>
+                </div>
+
+                <img src="../images/icons/arrow.gif" alt="arrow gif" class="h-16 mt-10 hidden md:block" />
+
+                <!-- Delivery -->
+                <div class="flex flex-col items-center gap-2 w-[188px]">
+                    <div class="bg-[#5E5EEE] p-3 rounded-full">
+                        <img src="../images/icons/delivery.png" alt="shipping" class="h-8" />
+                    </div>
+                    <p class="text-[22px] font-semibold text-black">Delivery</p>
+                    <p class="text-[22px] font-medium text-[#5E5EEE]">Fast shipping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- journey section ends here -->
+
+    <!-- Loyalty Program Section -->
+    <section class="w-full bg-white py-20 px-6 flex flex-col items-center gap-16">
+        <!-- Title -->
+        <div class="text-center space-y-4">
+            <div class="flex items-center justify-center gap-2">
+                <img src="../images/icons/titleIcon.png" alt="icon" class="h-5" />
+                <h3 class="text-[#5E5EEE] font-bold text-lg">Loyalty Program</h3>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-black">How It Works: Simple Steps to a Perfect Smile!</h2>
+        </div>
+
+        <!-- Cards Row -->
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-8">
+            <!-- Tier: Current -->
+            <div
+                class="w-[350px] bg-white border-[3px] border-[#5E5EEE] rounded-[40px] p-8 shadow hover:border-blue-600 transition-colors duration-300">
+                <div class="flex flex-col gap-6">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center flex-wrap">
+                        <div class="flex items-center gap-2 bg-[#4242FF] text-white px-4 py-1 rounded-full">
+                            <span class="text-sm font-semibold">Current Tier</span>
+                        </div>
+                        <img src="../images/icons/rating1.png" alt="medal" class="h-8" />
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-400" />
+
+                    <span class="text-lg font-bold">Silver</span>
+                    <div class="cashback flex flex-row gap-1 items-center h-2">
+                        <span class="text-green-600 font-semibold text-2xl">2%</span>
+                        <p class="text-lg font-normal text-gray-500">Cashback</p>
+                    </div>
+
+                    <!-- Features -->
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold">free shipping over $500</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold  ">standard support</span>
+                        </li>
+                        <div class="benefits flex items-center justify-center mt-10">
+                            <li class="text-gray-500 font-semibold font-medium">Your activity tier benefits</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tier: Gold -->
+            <div
+                class="relative w-[350px] bg-white rounded-[40px] p-8 shadow hover:border-blue-600 border-[3px] border-transparent transition-colors duration-300">
+                <div
+                    class="absolute top-[-15px] left-[200px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                    Most popular</div>
+                <div class="flex flex-col gap-6">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center flex-wrap">
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold">Gold</span>
+                        </div>
+                        <img src="../images/icons/rating2.png" alt="medal" class="h-8" />
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-400" />
+
+                    <div class="cashback flex flex-row gap-1 items-center h-2">
+                        <span class="text-green-600 font-semibold text-2xl">5%</span>
+                        <p class="text-lg font-normal text-gray-500">Cashback</p>
+                    </div>
+                    <!-- Features -->
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold">free express shipping</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold">Priority Support</span>
+                        </li>
+                    </ul>
+
+                    <!-- Button -->
+                    <button
+                        class="mt-4 w-full bg-[#5E5EEE] text-white py-3 rounded-xl font-semibold flex justify-center items-center gap-2">
+                        <img src="../images/icons/viewDetails.png" class="h-5" /> How to reach Gold?
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tier: Platinum -->
+            <div
+                class="relative w-[350px] bg-white rounded-[40px] p-8 shadow hover:border-blue-600 border-[3px] border-transparent transition-colors duration-300">
+                <div
+                    class="absolute top-[-15px] left-[240px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                    Top Tier</div>
+                <div class="flex flex-col gap-6">
+                    <!-- Header -->
+                    <div class="flex justify-between items-center flex-wrap">
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold">Platinum</span>
+                        </div>
+                        <img src="../images/icons/rating3.png" alt="medal" class="h-8" />
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-gray-400" />
+
+                    <div class="cashback flex flex-row gap-1 items-center h-2">
+                        <span class="text-green-600 font-semibold text-2xl">10%</span>
+                        <p class="text-lg font-normal text-gray-500">Cashback</p>
+                    </div>
+                    <!-- Features -->
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold">VIP Support 24/7</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <span class="text-black text-1xl font-semibold">Exclusive Events</span>
+                        </li>
+                    </ul>
+
+                    <!-- Button -->
+                    <button
+                        class="mt-4 w-full bg-[#5E5EEE] text-white py-3 rounded-xl font-semibold flex justify-center items-center gap-2">
+                        <img src="../images/icons/viewDetails.png" class="h-5" /> How to reach platinum
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Loyalty Program Section ends here -->
+
+    <!-- Simple, Secure, Swift Section -->
+    <section class="relative w-full bg-[#F8F8FF] py-20 px-4 flex justify-center">
+        <div class="max-w-[781px] flex flex-col items-center gap-12">
+            <!-- Title and Description -->
+            <div class="text-center flex flex-col items-center gap-3">
+                <h2 class="text-4xl font-bold text-black">Simple, Secure, Swift</h2>
+                <p class="text-lg text-[#8B8B8B] font-bold">Online purchasing is fast, simple, and secure. Orders ship
+                    with DHL or UPS.</p>
+                <p class="text-base text-[#8B8B8B]">Orders prepared in 1–3 business days. We ship with UPS or DHL based
+                    on fastest route.</p>
+            </div>
+
+            <!-- Info Cards -->
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="relative w-full md:w-[363px] bg-white border-4 border-[#5E5EEE] shadow-lg rounded-3xl overflow-hidden">
+                    <!-- Header -->
+                    <div class="bg-[#5E5EEE] h-[100px] flex justify-center items-center">
+                        <h3 class="text-white text-xl font-semibold">Fast Delivery</h3>
+                    </div>
+                    <!-- Body -->
+                    <div class="p-6 flex flex-col gap-4">
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">2–7 business days to US/EU</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">5–12 days to South America/Eastern Europe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="relative w-full md:w-[387px] bg-white border-4 border-[#5E5EEE] shadow-lg rounded-3xl overflow-hidden">
+                    <!-- Header -->
+                    <div class="bg-[#5E5EEE] h-[100px] flex justify-center items-center">
+                        <h3 class="text-white text-xl font-semibold">Safe & Guaranteed</h3>
+                    </div>
+                    <!-- Body -->
+                    <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-4">
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">SSL Secure</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">Refund Policy</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">Quality Guarantee</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">24/7 Support</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">DHL</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="../images/icons/check.png" class="h-5" />
+                            <p class="text-black text-base">UPS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Simple, Secure, Swift Section ends here -->
+
+    <!-- Trusted by Dental Section -->
+    <section class="relative w-full bg-white/90 py-20 px-4 overflow-hidden">
+        <!-- Decorative Images -->
+        <img src="../images/machine1.png" alt="Decor" class="absolute left-0 top-0 w-[180px] h-[180px]" />
+        <img src="../images/machine2.png" alt="Decor" class="absolute right-0 bottom-0 w-[85px] h-[100px]" />
+
+        <!-- Main Heading -->
+        <div class="text-center mx-auto max-w-3xl mb-16">
+            <h2 class="text-4xl font-bold text-black">Trusted by Dental Professionals</h2>
+        </div>
+
+        <!-- Scrollable Stat Cards -->
+        <div
+            class="flex overflow-x-auto gap-4 sm:grid sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7 sm:gap-6 max-w-[1680px] mx-auto px-1 sm:px-0">
+            <!-- Stat Card -->
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">1000+</h3>
+                <p class="text-xl font-medium text-[#102693]">Satisfied Clinics</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">50,000</h3>
+                <p class="text-xl font-medium text-[#102693]">Order Delivered</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">99%</h3>
+                <p class="text-xl font-medium text-[#102693]">Satisfaction Rate</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">1000+</h3>
+                <p class="text-xl font-medium text-[#102693]">Satisfied Clinics</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">24/7</h3>
+                <p class="text-xl font-medium text-[#102693]">Support</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">99%</h3>
+                <p class="text-xl font-medium text-[#102693]">Satisfaction Rate</p>
+            </div>
+
+            <div
+                class="min-w-[220px] sm:min-w-0 bg-white border border-[#C6C6C6] rounded-2xl px-5 py-4 flex-shrink-0 sm:flex-shrink flex flex-col items-center gap-3">
+                <h3 class="text-4xl font-semibold text-black leading-tight">1,000+</h3>
+                <p class="text-xl font-medium text-[#102693]">Satisfaction Clinics</p>
+            </div>
+        </div>
+    </section>
+    <!-- Trusted by Dental Section ends here -->
+
+    <!-- About Us Section -->
+    <!-- About Us Section -->
+    <section class="relative w-full bg-[#F8F8FF] py-20 px-4 sm:px-8 md:px-10">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 max-w-[1527px] mx-auto">
+
+            <!-- Left Image Content -->
+            <div class="relative w-full max-w-[600px] sm:max-w-[682px] aspect-[682/609]">
+                <!-- Main Image -->
+                <img src="../images/about1.png" alt="Main About Image"
+                    class="absolute top-1/2 left-0 -translate-y-1/2 w-full h-full object-cover rounded-[30px] sm:rounded-[50px]" />
+
+                <!-- Floating Image Bottom Right -->
+                <div
+                    class="absolute bottom-[0px] right-[-10px] sm:right-[-5px] w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] z-20 border-t-8 border-r-8 border-white bg-white rounded-[20px] sm:rounded-[30px] group p-2 sm:p-3 shadow-md">
+                    <img src="../images/about2.png" alt="Overlay"
+                        class="w-full h-full object-cover rounded-[20px] sm:rounded-[30px]" />
+                    <div
+                        class="absolute inset-0 bg-cyan-300 opacity-0 group-hover:opacity-90 transition duration-300 rounded-[20px] sm:rounded-[30px] flex flex-col items-center justify-center p-3 sm:p-4 text-white text-sm text-center">
+                        <span class="text-3xl sm:text-5xl font-bold text-black">98%</span>
+                        <p class="text-lg sm:text-2xl text-black font-semibold">Success</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="w-full max-w-xl flex flex-col gap-8">
+                <!-- Title and Paragraph -->
+                <div class="flex flex-col gap-6">
+                    <div class="flex items-center gap-2">
+                        <img src="../images/icons/titleIcon.png" alt="icon" class="h-4 w-4">
+                        <p class="text-[#5E5EEE] text-lg font-bold">About Us</p>
+                    </div>
+                    <h2 class="text-3xl sm:text-[40px] font-bold leading-tight text-black">
+                        Committed to Restoring Smiles with Premium Dental Implants
+                    </h2>
+                    <p class="text-[#787878] text-base sm:text-[18px] leading-[28px]">
+                        We specialize in providing high-quality dental implants designed for precision, durability, and
+                        seamless integration. Trusted by dental professionals worldwide, our products ensure long-term
+                        patient satisfaction and success.
+                    </p>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="border-t border-b border-[#999]/15 py-6 flex flex-col gap-6">
+                    <div class="flex flex-col flex-wrap sm:flex-row md:flex-nowrap gap-6">
+                        <div class="flex items-center gap-3 w-full sm:w-[300px]">
+                            <span class="text-[#5E5EEE] font-semibold text-lg sm:text-[22px]">25+ Years</span>
+                            <p class="text-[#696969] text-sm sm:text-[16px]">Delivering innovation in dental implants.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 w-full sm:w-[340px]">
+                            <span class="text-[#5E5EEE] font-semibold text-lg sm:text-[22px]">100% Satisfaction</span>
+                            <p class="text-[#696969] text-sm sm:text-[16px]">Trusted by professionals globally.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <button
+                    class="mt-4 sm:mt-6 px-6 py-3 bg-[#5E5EEE] text-white font-bold text-[16px] rounded-[20px] flex items-center gap-2 w-fit hover:bg-blue-800 transition">
+                    <img src="../images/icons/read.png" alt="read" class="h-5 w-5">
+                    Browse Implants
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- About us section ends here -->
+
+    <!-- Testimonials Section -->
+    <section class="relative w-full bg-white py-20 px-4 overflow-hidden">
+        <!-- Testimonials Header -->
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 mb-16 px-4">
+            <!-- Text Content -->
+            <div class="flex flex-col items-start gap-6 w-full md:w-1/2">
+                <div class="flex items-center gap-2">
+                    <img src="../images/icons/titleIcon.png" alt="icon" class="h-5" />
+                    <span class="text-[#5E5EEE] font-bold text-lg">Testimonials</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-black">Superior Quality. Seamless Restorations</h2>
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="flex items-center gap-3">
+                <button id="prev-testimonial"
+                    class="w-10 h-10 bg-[#E9E9FF] rounded-full flex items-center justify-center hover:bg-[#5E5EEE] transition-colors">
+                    <img src="../images/icons/next.png" alt="Previous" class="w-6 h-6 rotate-180" />
+                </button>
+                <button id="next-testimonial"
+                    class="w-10 h-10 bg-[#5E5EEE] rounded-full flex items-center justify-center hover:bg-[#4242FF] transition-colors">
+                    <img src="../images/icons/arrow.png" alt="Next" class="w-6 h-6" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="max-w-7xl mx-auto border-b border-[#C6C6C6] mb-12"></div>
+
+        <!-- Testimonials Carousel -->
+        <div class="max-w-auto mx-auto relative">
+            <div id="testimonials-container"
+                class="reviewsMain w-auto flex overflow-x-auto gap-6 px-4 py-6 scrollbar-hide">
+
+                <!-- Reviews1 -->
+                <div
+                    class="relative w-[350px] h-[70%] bg-white rounded-[40px] p-8 shadow border-blue-600 border-[3px] flex-shrink-0">
+                    <div
+                        class="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                        <img src="../images/icons/h1.png" alt="icon" class="w-8 h-8">
+                    </div>
+                    <img src="../images/cover/starts.png" alt="rating star" class="h-7 w-15 left-10 top-0">
+                    <p class="text-black text-sm m-5">I've been using Dentallmplants implants for over five years. The
+                        precision and quality are unmatched, leading to
+                        exceptional results for my patients!</p>
+                    <div class="profile flex flex-row gap-2 items-center">
+                        <img src="../images/icons/profile.png" alt="profile" class="h-10 mb-8">
+                        <p class="userName mb-10">Dr. john Smith, DDS</p>
+                    </div>
+                </div>
+
+                <!-- Reviews2 -->
+                <div
+                    class="relative w-[350px] h-[70%] bg-white rounded-[40px] p-8 shadow border-blue-600 border-[3px] flex-shrink-0">
+                    <div
+                        class="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                        <img src="../images/icons/h1.png" alt="icon" class="w-8 h-8">
+                    </div>
+                    <img src="../images/cover/starts.png" alt="rating star" class="h-7 w-15 left-10 top-0">
+                    <p class="text-black text-sm m-5">I've been using Dentallmplants implants for over five years. The
+                        precision and quality are unmatched, leading to
+                        exceptional results for my patients!</p>
+                    <div class="profile flex flex-row gap-2 items-center">
+                        <img src="../images/icons/profile.png" alt="profile" class="h-10 mb-8">
+                        <p class="userName mb-10">Dr. john Smith, DDS</p>
+                    </div>
+                </div>
+
+                <!-- Reviews3 -->
+                <div
+                    class="relative w-[350px] h-[70%] bg-white rounded-[40px] p-8 shadow border-blue-600 border-[3px] flex-shrink-0">
+                    <div
+                        class="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                        <img src="../images/icons/h1.png" alt="icon" class="w-8 h-8">
+                    </div>
+                    <img src="../images/cover/starts.png" alt="rating star" class="h-7 w-15 left-10 top-0">
+                    <p class="text-black text-sm m-5">I've been using Dentallmplants implants for over five years. The
+                        precision and quality are unmatched, leading to
+                        exceptional results for my patients!</p>
+                    <div class="profile flex flex-row gap-2 items-center">
+                        <img src="../images/icons/profile.png" alt="profile" class="h-10 mb-8">
+                        <p class="userName mb-10">Dr. john Smith, DDS</p>
+                    </div>
+                </div>
+
+                <!-- Reviews4 -->
+                <div
+                    class="relative w-[350px] h-[70%] bg-white rounded-[40px] p-8 shadow border-blue-600 border-[3px] flex-shrink-0">
+                    <div
+                        class="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                        <img src="../images/icons/h1.png" alt="icon" class="w-8 h-8">
+                    </div>
+                    <img src="../images/cover/starts.png" alt="rating star" class="h-7 w-15 left-10 top-0">
+                    <p class="text-black text-sm m-5">I've been using Dentallmplants implants for over five years. The
+                        precision and quality are unmatched, leading to
+                        exceptional results for my patients!</p>
+                    <div class="profile flex flex-row gap-2 items-center">
+                        <img src="../images/icons/profile.png" alt="profile" class="h-10 mb-8">
+                        <p class="userName mb-10">Dr. john Smith, DDS</p>
+                    </div>
+                </div>
+
+                <!-- Reviews5 -->
+                <div
+                    class="relative w-[350px] h-[70%] bg-white rounded-[40px] p-8 shadow border-blue-600 border-[3px] flex-shrink-0">
+                    <div
+                        class="absolute top-[-19px] left-[250px] bg-[#4242FF] text-white text-sm font-semibold px-4 py-1 rounded-full whitespace-nowrap z-10">
+                        <img src="../images/icons/h1.png" alt="icon" class="w-8 h-8">
+                    </div>
+                    <img src="../images/cover/starts.png" alt="rating star" class="h-7 w-15 left-10 top-0">
+                    <p class="text-black text-sm m-5">I've been using Dentallmplants implants for over five years. The
+                        precision and quality are unmatched, leading to
+                        exceptional results for my patients!</p>
+                    <div class="profile flex flex-row gap-2 items-center">
+                        <img src="../images/icons/profile.png" alt="profile" class="h-10 mb-8">
+                        <p class="userName mb-10">Dr. john Smith, DDS</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Testimonials section ends here -->
+
+    <!-- Chat Information -->
+    <section class="relative w-full flex justify-center -mb-[135px] z-20 px-4">
+        <div
+            class="w-full md:w-[70vw] md:h-[270px] max-w-[1280px] bg-[#5E5EEE] border-8 border-white rounded-[20px] px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-8 shadow-lg">
+
+            <!-- Left Side: Subscribe -->
+            <div class="flex flex-col gap-4 w-full md:max-w-[50%]">
+                <!-- Headings -->
+                <div class="flex flex-col gap-2">
+                    <h2 class="text-white font-bold text-2xl sm:text-3xl leading-tight">Stay Informed</h2>
+                    <p class="text-white text-base sm:text-lg leading-relaxed">Get updates on new products and special
+                        offers</p>
+                </div>
+
+                <!-- Email Input + Button -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+                    <!-- Input box -->
+                    <div class="flex items-center bg-white rounded-2xl h-12 px-4 w-full sm:flex-grow">
+                        <input type="email" placeholder="Enter Your Mail..."
+                            class="w-full text-base text-gray-500 outline-none bg-transparent" />
+                    </div>
+                    <!-- Button -->
+                    <button
+                        class="bg-white rounded-2xl px-6 py-3 flex items-center justify-center gap-2 text-[#5E5EEE] font-bold text-base h-12 whitespace-nowrap w-full sm:w-auto">
+                        Subscribe now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side: WhatsApp Box -->
+            <div class="relative w-full md:max-w-[380px] h-[240px] flex justify-center items-center mt-4 md:mt-0">
+                <!-- Semi-transparent overlay -->
+                <div class="absolute inset-0 bg-black opacity-20 rounded-xl"></div>
+
+                <!-- WhatsApp Content -->
+                <div class="relative w-[90%] max-w-[270px] flex flex-col items-center gap-4 text-center z-10">
+                    <img src="../images/icons/whatsapp.png" alt="whatsapp" class="w-10 h-10">
+                    <h3 class="text-white font-bold text-xl sm:text-2xl">Need Help?</h3>
+                    <p class="text-white text-sm sm:text-base">Get instant support via WhatsApp</p>
+
+                    <button
+                        class="bg-white rounded-2xl px-6 py-3 flex items-center justify-center gap-2 text-[#5E5EEE] font-bold text-sm sm:text-base h-12 whitespace-nowrap">
+                        <img src="../images/icons/chat.png" alt="chatIcon" class="h-5 w-5">
+                        Chat Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chat Section ends here -->
+
+    <!-- footer starts here -->
+    <footer class="bg-black text-white px-6 md:px-24 py-20 relative z-10">
+        <div class="max-w-screen-xl mx-auto flex flex-col gap-12 mt-[150px]">
+
+            <!-- Top Content -->
+            <div class="flex flex-col lg:flex-row justify-between gap-12">
+
+                <!-- Brand & Social -->
+                <div class="flex flex-col gap-8 max-w-md">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-2xl md:text-3xl font-bold">Dentallmplants.com</h2>
+                        <p class="text-white text-base md:text-lg leading-[1.5]">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page
+                            when looking at its layout.
+                        </p>
+                    </div>
+                    <!-- Social Icons -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-3">Follow Us:-</h3>
+                        <div class="flex gap-4">
+                            <div class="bg-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                                <img src="../images/icons/facebook.png" alt="Facebook" class="w-6 h-6" />
+                            </div>
+                            <div class="bg-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                                <img src="../images/icons/instagram.png" alt="Instagram" class="w-6 h-6" />
+                            </div>
+                            <div class="bg-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                                <img src="../images/icons/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+
+                    <!-- Products -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Products</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Implants
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Abutments
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Surgical
+                                Kits</li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Support</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3">Contacts
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span> FAQ
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Shipping
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Legal -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-6">Legal</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Contacts
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span> FAQ
+                            </li>
+                            <li class="flex items-center gap-2"><img src="../images/icons/vector.png" alt="icon"
+                                    class="w-3 h-3"></span>
+                                Shipping
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Divider and Bottom Text -->
+            <div class="border-t border-gray-400 pt-6 text-center text-sm">
+                © 2025 Dentallmplants.com | All rights reserved
+            </div>
+
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
